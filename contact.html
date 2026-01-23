@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Dr. Mohd. Yaseen Khan</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
-        (function() {
+        (function () {
             // NOTE: Replace 'YOUR_PUBLIC_KEY' with your actual EmailJS public key
             emailjs.init('YOUR_PUBLIC_KEY');
         })();
     </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
     <nav class="navbar">
-        <div class="logo">Dr. Yaseen Khan</div>
+        <div class="logo"><a href="index.html">Dr. Yaseen Khan</a></div>
         <div class="hamburger">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -34,42 +37,49 @@
             <a href="education.html">Education</a>
             <a href="experience.html">Experience</a>
             <a href="research.html">Research</a>
-            <a href="awards.html">Awards</a>
-            <a href="gallery.html">Gallery</a>
+            <a href="achievements.html">Achievements</a>
             <a href="contact.html" class="active">Contact</a>
-            <a href="assets/Dr_Khan_CV.txt" target="_blank" class="btn-cv">Download CV</a>
+            <a href="assets/Dr_Khan_CV.pdf" target="_blank" class="btn-cv"></a>
         </div>
     </nav>
 
     <main class="container section">
-        <h2 class="hero-title section-title text-center" style="font-size: 3rem; margin-top: 4rem;">Get in Touch</h2>
-        
-        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); align-items: start; gap: 3rem;">
-            
+        <h2 class="page-title text-center">Get in Touch</h2>
+
+        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 3rem;">
+
             <div class="card" style="height: 100%;">
-                <h3 class="mb-2">Academic Connect</h3>
+                <h3 class="mb-2">Contact Information</h3>
                 <div style="margin-bottom: 2rem;">
-                    <p class="mb-1" style="font-size: 1.1rem; color: var(--color-primary);"><strong>Dr. Mohd. Yaseen Khan</strong></p>
-                    <p class="mb-1">Associate Professor</p>
-                    <p class="mb-1">Vivekananda Global University, Jaipur</p>
+                    <p class="mb-1" style="font-size: 1.1rem; color: var(--color-primary);"><strong>Dr. Mohd. Yaseen
+                            Khan</strong></p>
+                    <p class="mb-1"><i class="fas fa-phone-alt text-gold" style="width: 20px;"></i> +91 99999 00423, +91
+                        99273 30833</p>
+                    <p class="mb-1"><i class="fas fa-envelope text-gold" style="width: 20px;"></i> drmykhan76@gmail.com
+                    </p>
+                    <p class="mb-1"><i class="fas fa-map-marker-alt text-gold" style="width: 20px;"></i> Bareilly, U.P.
+                        / Jaipur, Rajasthan</p>
                 </div>
-                
-                <div style="margin-bottom: 2rem; padding: 1.5rem; background: rgba(255,255,255,0.03); border-radius: var(--radius-md);">
-                    <p class="mb-1" style="font-size: 0.95rem;">Available for:</p>
+
+                <div class="availability-box">
+                    <p class="mb-1" style="font-size: 0.95rem;">Availability:</p>
                     <ul style="list-style: none; margin-left: 0.5rem;">
-                        <li style="margin-bottom: 0.5rem;"><i class="fas fa-check text-gold" style="margin-right: 0.5rem;"></i> Research Collaboration</li>
-                        <li style="margin-bottom: 0.5rem;"><i class="fas fa-check text-gold" style="margin-right: 0.5rem;"></i> Keynote Sessions</li>
-                        <li style="margin-bottom: 0.5rem;"><i class="fas fa-check text-gold" style="margin-right: 0.5rem;"></i> PhD Supervision</li>
-                        <li><i class="fas fa-check text-gold" style="margin-right: 0.5rem;"></i> Academic Consultancy</li>
+                        <li style="margin-bottom: 0.5rem;"><i class="fas fa-check text-gold"
+                                style="margin-right: 0.5rem;"></i> Research Collaboration</li>
+                        <li style="margin-bottom: 0.5rem;"><i class="fas fa-check text-gold"
+                                style="margin-right: 0.5rem;"></i> PhD Supervision</li>
+                        <li style="margin-bottom: 0.5rem;"><i class="fas fa-check text-gold"
+                                style="margin-right: 0.5rem;"></i> Guest Lectures</li>
                     </ul>
                 </div>
-                
+
                 <h4 class="text-gold mb-1">Connect Online</h4>
-                <div style="font-size: 1.5rem; display: flex; gap: 1.5rem; margin-top: 1rem;">
-                    <a href="#" class="text-gold" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" class="text-gold" title="ResearchGate"><i class="fab fa-researchgate"></i></a>
-                    <a href="#" class="text-gold" title="Twitter/X"><i class="fab fa-twitter"></i></a>
-                    <a href="mailto:email@example.com" class="text-gold" title="Email"><i class="fas fa-envelope"></i></a>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/dr-mohd-yaseen-khan-3a057920" target="_blank"
+                        title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.researchgate.net/scientific-contributions/Mohd-Yaseen-Khan-2294078818"
+                        target="_blank" title="ResearchGate"><i class="fab fa-researchgate"></i></a>
+                    <a href="mailto:drmykhan76@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
                 </div>
             </div>
 
@@ -77,50 +87,55 @@
                 <form id="contact-form" novalidate>
                     <div class="form-group">
                         <label for="user_name" class="form-label">Full Name</label>
-                        <input type="text" id="user_name" name="user_name" class="form-control" placeholder="e.g. Dr. Jane Doe">
+                        <input type="text" id="user_name" name="user_name" class="form-control"
+                            placeholder="e.g. Dr. Jane Doe">
                         <span class="error-text">Please enter your name.</span>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="user_email" class="form-label">Email Address</label>
-                        <input type="email" id="user_email" name="user_email" class="form-control" placeholder="name@example.com">
+                        <input type="email" id="user_email" name="user_email" class="form-control"
+                            placeholder="name@example.com">
                         <span class="error-text">Please enter a valid email address.</span>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="message" class="form-label">Message</label>
-                        <textarea id="message" name="message" rows="5" class="form-control" placeholder="How can we collaborate?"></textarea>
+                        <textarea id="message" name="message" rows="5" class="form-control"
+                            placeholder="How can we collaborate?"></textarea>
                         <span class="error-text">Please enter your message.</span>
                     </div>
 
                     <div class="form-group" style="margin-top: 2.5rem; margin-bottom: 0;">
-                        <button type="submit" class="btn btn-primary btn-full" style="padding: 1.2rem; display: flex; width: 100%;">
+                        <button type="submit" class="btn btn-primary btn-full"
+                            style="padding: 1.2rem; display: flex; width: 100%;">
                             <i class="fas fa-paper-plane" style="margin-right: 0.75rem;"></i> Send Message
                         </button>
                     </div>
-                    <p id="form-status" style="margin-top: 1rem; font-size: 0.9rem; text-align: center; min-height: 1.5rem;"></p>
+                    <p id="form-status"
+                        style="margin-top: 1rem; font-size: 0.9rem; text-align: center; min-height: 1.5rem;"></p>
                 </form>
             </div>
         </div>
     </main>
 
     <script>
-        document.getElementById('contact-form').addEventListener('submit', function(event) {
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
             event.preventDefault();
-            
+
             const form = this;
             const btn = form.querySelector('button');
             const status = document.getElementById('form-status');
             const nameInput = document.getElementById('user_name');
             const emailInput = document.getElementById('user_email');
             const messageInput = document.getElementById('message');
-            
+
             // Reset errors
             [nameInput, emailInput, messageInput].forEach(input => {
                 input.classList.remove('error');
             });
             status.textContent = '';
-            
+
             let isValid = true;
 
             // Validate Name
@@ -147,26 +162,26 @@
                 status.style.color = '#ef4444';
                 return;
             }
-            
+
             btn.textContent = 'Sending...';
             btn.disabled = true;
             btn.style.opacity = '0.7';
-            
+
             // NOTE: Replace these with your actual Service ID and Template ID from EmailJS
             emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
-                .then(function() {
+                .then(function () {
                     btn.textContent = 'Message Sent!';
                     status.textContent = 'Thank you! Your message has been sent successfully.';
                     status.style.color = '#4ade80';
                     form.reset();
-                    
+
                     setTimeout(() => {
                         btn.textContent = 'Send Message';
                         btn.disabled = false;
                         btn.style.opacity = '1';
                         status.textContent = '';
                     }, 5000);
-                }, function(error) {
+                }, function (error) {
                     console.error('EmailJS Error:', error);
                     btn.textContent = 'Send Message';
                     btn.disabled = false;
@@ -175,11 +190,11 @@
                     status.style.color = '#f87171';
                 });
         });
-        
+
         // Clear error on input
         document.querySelectorAll('.form-control').forEach(input => {
-            input.addEventListener('input', function() {
-                if(this.classList.contains('error')) {
+            input.addEventListener('input', function () {
+                if (this.classList.contains('error')) {
                     this.classList.remove('error');
                 }
             });
@@ -192,4 +207,5 @@
 
     <script src="js/animations.js"></script>
 </body>
+
 </html>

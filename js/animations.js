@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Dynamic Text Cycling (Hero Subtitle)
     const subtitles = [
-        "20.5 Years of Academic & Industry Experience",
+        "21+ Years of Academic & Industry Experience",
         "Awarded by President of India",
         "Researcher | Mentor | Keynote Speaker"
     ];
