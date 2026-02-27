@@ -1,0 +1,390 @@
+/* Buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    transition: var(--transition);
+    cursor: pointer;
+    border: 2px solid var(--color-primary);
+    background: transparent;
+    color: var(--color-primary);
+    position: relative;
+    overflow: hidden;
+    margin-top: 1rem;
+    white-space: nowrap;
+    outline: none;
+    font-family: inherit;
+    z-index: 1;
+}
+
+.btn-primary {
+    background: var(--color-primary);
+    color: var(--color-bg);
+    box-shadow: 0 0 30px var(--color-primary-glow);
+}
+
+.btn-full {
+    width: 100%;
+    margin-right: 0;
+}
+
+.btn:not(.btn-full) {
+    margin-right: 1.5rem;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px -5px var(--color-primary-glow);
+    border-color: #fff;
+}
+
+.btn-primary:hover {
+    background: #f59e0b;
+    border-color: #fff;
+}
+
+.btn-accent,
+.btn-cv {
+    background: var(--color-primary);
+    color: var(--color-bg) !important;
+    font-weight: 800;
+    border: 2px solid var(--color-primary);
+    border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    box-shadow: 0 6px 20px var(--color-primary-glow);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+/* Navbar Button Specifics */
+.btn-cv {
+    padding: 0.6rem 1.8rem;
+    font-size: 0.85rem;
+    margin-left: 2rem;
+}
+
+/* Ensure navbar link padding doesn't override button padding */
+.nav-links .btn-cv {
+    padding: 0.6rem 1.8rem !important;
+}
+
+/* Hero Button Specifics (Match standard .btn size) */
+.btn-accent {
+    padding: 1rem 2.5rem;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    margin-right: 1.5rem;
+    line-height: inherit;
+}
+
+.btn-accent::before,
+.btn-cv::before {
+    content: '\f019';
+    /* FontAwesome download icon */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+
+.btn-accent:hover,
+.btn-cv:hover {
+    background: var(--color-primary);
+    color: var(--color-bg) !important;
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 12px 30px var(--color-primary-glow);
+    border-color: #fff;
+}
+
+.btn-accent:active,
+.btn-cv:active {
+    transform: translateY(-1px) scale(0.98);
+}
+
+/* Glass Cards */
+.card {
+    background: var(--color-glass);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid var(--color-glass-border);
+    border-radius: var(--radius-md);
+    padding: 2.5rem;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+    will-change: transform, opacity;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, transparent, rgba(251, 191, 36, 0.05));
+    opacity: 0;
+    transition: var(--transition);
+    pointer-events: none;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: var(--color-primary);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6), 0 0 15px var(--color-primary-glow);
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+
+.card h3 {
+    color: var(--color-text-heading);
+    margin-bottom: 1.25rem;
+    font-size: 1.6rem;
+}
+
+/* Card Modifiers */
+.card--highlight {
+    background: rgba(251, 191, 36, 0.08);
+    border: 2px solid var(--color-primary);
+}
+
+.card--flex {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.card--accent-left {
+    border-left: 5px solid var(--color-primary);
+}
+
+/* Book Card Styles with 3D effect */
+.book-thumbnail {
+    height: 280px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+    perspective: 1000px;
+}
+
+.book-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-origin: center right;
+}
+
+.card:hover .book-thumbnail img {
+    transform: rotateY(-15deg) scale(1.1);
+}
+
+/* Form Validation Styles */
+.form-group {
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--color-text-heading);
+}
+
+.form-control {
+    width: 100%;
+    padding: 1.2rem;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--color-glass-border);
+    border-radius: var(--radius-md);
+    color: var(--color-text-heading);
+    font-family: var(--font-sans);
+    transition: var(--transition);
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 0 4px var(--color-primary-glow);
+}
+
+.form-control.error {
+    border-color: #f87171;
+}
+
+.error-text {
+    color: #f87171;
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+    display: none;
+    animation: fadeIn 0.3s ease;
+}
+
+.form-control.error+.error-text {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Form Styling */
+input,
+textarea {
+    width: 100%;
+    padding: 1.2rem;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--color-glass-border);
+    border-radius: var(--radius-md);
+    color: var(--color-text-heading);
+    font-family: var(--font-sans);
+    transition: var(--transition);
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/* Skills/Expertise */
+.skill-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+}
+
+.skill-tag {
+    padding: 0.85rem 1.8rem;
+    background: rgba(251, 191, 36, 0.05);
+    border: 1px solid rgba(251, 191, 36, 0.2);
+    border-radius: 50px;
+    color: var(--color-text-main);
+    transition: var(--transition);
+    font-size: 0.9rem;
+    font-weight: 500;
+    will-change: transform, opacity;
+}
+
+.skill-tag:hover {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+    color: var(--color-bg);
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 10px 20px var(--color-primary-glow);
+}
+
+/* Award Card */
+.award-card {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 3rem;
+}
+
+.award-icon {
+    font-size: 3.5rem;
+    color: var(--color-primary);
+    flex-shrink: 0;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(251, 191, 36, 0.1);
+    border-radius: 50%;
+    border: 1px solid rgba(251, 191, 36, 0.2);
+    box-shadow: 0 0 20px rgba(251, 191, 36, 0.1);
+}
+
+@media (max-width: 768px) {
+    .award-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+        padding: 2rem;
+    }
+}
+
+/* Icon Badge */
+.icon-badge {
+    font-size: 3rem;
+    color: var(--color-primary);
+    flex-shrink: 0;
+}
+
+/* Contact Availability Box */
+.availability-box {
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: var(--radius-md);
+    margin-bottom: 2rem;
+}
+
+/* Social Links */
+.social-links {
+    font-size: 1.5rem;
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.social-links a {
+    color: var(--color-primary);
+    transition: var(--transition);
+}
+
+.social-links a:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.2);
+}
+
+/* Gallery Layout */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.gallery-item {
+    aspect-ratio: 16/10;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    position: relative;
+    border: 1px solid var(--color-glass-border);
+    background: var(--color-bg-alt);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.2, 1, 0.3, 1);
+}

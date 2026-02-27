@@ -4,9 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the awards, honors, and professional certifications of Dr. Mohd. Yaseen Khan, including the Rashtrapati Puruskar and specialized FDPs.">
+    <link rel="canonical" href="https://mykhan.in/achievements.html" />
     <title>Achievements | Dr. Mohd. Yaseen Khan</title>
+    <link rel="icon" type="image/png" href="assets/images/profile-picture.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap"></noscript>
+
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap"
         rel="stylesheet">
@@ -19,9 +26,10 @@
 </head>
 
 <body>
+    <div class="scroll-progress"></div>
     <nav class="navbar">
-        <div class="logo"><a href="index.html">Dr. Yaseen Khan</a></div>
-        <div class="hamburger">
+        <div class="logo"><a href="index.html">Dr. Mohd. Yaseen Khan</a></div>
+        <div class="hamburger" aria-label="Toggle navigation menu">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
@@ -34,100 +42,129 @@
             <a href="research.html">Research</a>
             <a href="achievements.html" class="active">Achievements</a>
             <a href="contact.html">Contact</a>
-            <a href="assets/Dr_Khan_CV.pdf" target="_blank" class="btn-cv"></a>
+            <a href="assets/docs/Dr_MY_Khan_Resume.pdf" target="_blank" class="btn-cv" aria-label="Download CV">CV</a>
         </div>
     </nav>
 
     <main class="container section">
-        <h2 class="page-title">Achievements & Certifications</h2>
+        <h2 class="page-title">Achievements & Recognition</h2>
 
-        <!-- Honors Section -->
+        <!-- High Honors -->
         <h3 class="subsection-title">Honors & Awards</h3>
+        <div class="grid mb-2" style="gap: 3rem; margin-top: 2rem;">
+            <!-- Rashtrapati -->
+            <div class="card card--accent-left">
+                <div class="award-icon" style="margin-bottom: 2rem;">
+                    <i class="fas fa-medal"></i>
+                </div>
+                <h3 class="mb-1">Rashtrapati Puruskar</h3>
+                <p class="text-gold mb-1">President's Award (1989)</p>
+                <p class="mb-2" style="color: var(--color-text-muted);">
+                    Awarded by the <strong>President of India</strong> for exceptional social service in Scout
+                    and Red Cross Society. A lifelong recognition of social commitment.
+                </p>
+                <a href="assets/docs/Rashtrapati_Purushkar.pdf" target="_blank" class="btn btn-accent" style="font-size: 0.8rem; padding: 0.6rem 1.2rem;">View Certificate (PDF)</a>
+            </div>
 
-        <div class="award-card card">
-            <div class="award-icon">
-                <i class="fas fa-medal"></i>
-            </div>
-            <div>
-                <h3 class="mb-1">Rashtrapati Puruskar (President's Award)</h3>
-                <p>Awarded by the <strong>President of India</strong> in 1989 for exceptional social service in Scout
-                    and Red Cross Society.</p>
-            </div>
-        </div>
-
-        <div class="award-card card">
-            <div class="award-icon">
-                <i class="fas fa-medal"></i>
-            </div>
-            <div>
+            <!-- Gold Medal -->
+            <div class="card card--accent-left">
+                <div class="award-icon" style="margin-bottom: 2rem;">
+                    <i class="fas fa-trophy"></i>
+                </div>
                 <h3 class="mb-1">Gold Medal Winner</h3>
-                <p>Awarded by the <strong>Junior Red Cross Society of India</strong> in 1985 for outstanding service and
-                    dedication.</p>
+                <p class="text-gold mb-1">Junior Red Cross Society (1985)</p>
+                <p style="color: var(--color-text-muted);">
+                    Awarded by the <strong>Junior Red Cross Society of India</strong> for outstanding service, dedication, and impactful social contributions in early academic years.
+                </p>
+            </div>
+
+            <!-- Speaker -->
+            <div class="card card--accent-left">
+                <div class="award-icon" style="margin-bottom: 2rem;">
+                    <i class="fas fa-microphone-alt"></i>
+                </div>
+                <h3 class="mb-1">Valedictory Speaker</h3>
+                <p class="text-gold mb-1">IPEM International E-Conference (2023)</p>
+                <p class="mb-2" style="color: var(--color-text-muted);">
+                    Invited as the concluding speaker at the 5th International E-Conference, Ghaziabad, sharing insights on management and digital shifts.
+                </p>
+                <div style="margin-top: 1rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--color-glass-border);">
+                    <img src="assets/images/gallery/ipem-2.jpeg" alt="IPEM Speaker Event" style="width: 100%; display: block; filter: brightness(0.9); transition: 0.4s ease;">
+                </div>
             </div>
         </div>
 
-        <!-- Certifications Section -->
-        <h3 class="subsection-title" style="margin-top: 3rem;">Professional Certifications</h3>
-
-        <div class="grid" style="gap: 2rem;">
-            <!-- Certificate 1: AIU-VGU FDP -->
-            <div class="card">
-                <a href="Documents/CERTIFICATE OF PARTICIPATION by AIU-Vivekananda Global University.jpeg"
-                    target="_blank" style="display: block; margin-bottom: 1rem;">
-                    <img src="Documents/CERTIFICATE OF PARTICIPATION by AIU-Vivekananda Global University.jpeg"
-                        alt="Certificate of Participation - AIU Vivekananda Global University FDP"
-                        style="width: 100%; border-radius: 8px; border: 1px solid var(--color-glass-border);">
-                </a>
-                <span class="text-gold" style="font-size: 0.9rem;">November 17–21, 2025</span>
-                <h3 class="mb-1">5-Day Faculty Development Programme (FDP)</h3>
-                <p class="mb-1"><strong>Theme:</strong> Embedding Sustainability & Well-Being in Higher Education: ESG
-                    Perspectives & Teaching Excellence</p>
-                <p class="mb-1"><strong>Organizer:</strong> AIU-VGU-Academic & Administrative Development Centre (AADC),
-                    in collaboration with the Faculty of Management, VGU</p>
-                <p><strong>Focus:</strong> Integrating Environmental, Social, and Governance (ESG) frameworks into
-                    management education and improving pedagogical standards for teaching excellence.</p>
-            </div>
-
-            <!-- Certificate 2: VIT Data Analysis Workshop -->
-            <div class="card">
-                <a href="Documents/Certificate of Participation Data Analysis for Multidisciplinary Research.png"
-                    target="_blank" style="display: block; margin-bottom: 1rem;">
-                    <img src="Documents/Certificate of Participation Data Analysis for Multidisciplinary Research.png"
-                        alt="Certificate of Participation - Data Analysis for Multidisciplinary Research"
-                        style="width: 100%; border-radius: 8px; border: 1px solid var(--color-glass-border);">
-                </a>
-                <span class="text-gold" style="font-size: 0.9rem;">October 21–25, 2025</span>
-                <h3 class="mb-1">Data Analysis for Multidisciplinary Research</h3>
-                <p class="mb-1"><strong>Institution:</strong> VIT Business School, Vellore Institute of Technology
-                    (VIT), Vellore, India</p>
-                <p class="mb-1"><strong>Duration:</strong> Five-Day Online Workshop</p>
-                <p class="mb-1"><strong>Registration No.:</strong> 062414</p>
-                <p><strong>Focus:</strong> Specialized training in data analysis techniques tailored for
-                    multidisciplinary research applications and high-impact research across various academic
-                    disciplines.</p>
-            </div>
-
-            <!-- Certificate 3: JIMS FDP -->
-            <div class="card">
-                <a href="Documents/Certificate of Participation One-Week National Faculty Development Program (FDP).jpeg"
-                    target="_blank" style="display: block; margin-bottom: 1rem;">
-                    <img src="Documents/Certificate of Participation One-Week National Faculty Development Program (FDP).jpeg"
-                        alt="Certificate of Participation - One-Week National Faculty Development Program"
-                        style="width: 100%; border-radius: 8px; border: 1px solid var(--color-glass-border);">
-                </a>
-                <span class="text-gold" style="font-size: 0.9rem;">July 21–25, 2025</span>
-                <h3 class="mb-1">One-Week National Faculty Development Program (FDP)</h3>
-                <p class="mb-1"><strong>Topic:</strong> Innovative Analytical Tools & Methods for Multidisciplinary
-                    Research</p>
-                <p class="mb-1"><strong>Institution:</strong> JIMS Engineering Management Technical Campus, Greater
-                    Noida</p>
-                <p><strong>Focus:</strong> Mastering modern research methodologies and analytical tools.</p>
+        <!-- Certifications -->
+        <h3 class="subsection-title" style="margin-top: 5rem;">Professional Certifications & Training</h3>
+        
+        <div class="card mb-2" style="border-left: 5px solid var(--color-primary); background: rgba(251, 191, 36, 0.05);">
+            <div style="display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;">
+                <div class="award-icon" style="min-width: 80px; height: 80px; font-size: 2rem; background: var(--color-primary); color: var(--color-bg);">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <div>
+                    <h3 style="margin: 0; font-size: 1.8rem;">36+ Specialized Certifications</h3>
+                    <p style="margin: 0.5rem 0 0; color: var(--color-text-main); font-size: 1.1rem;">
+                        <strong>LinkedIn:</strong> 21 Certificates (Teaching & Instructional Design) <br>
+                        <strong>Coursera:</strong> 15 Certificates (Digital Marketing & Management)
+                    </p>
+                </div>
             </div>
         </div>
+
+        <div class="grid" style="gap: 2.5rem;">
+            <!-- Certificate 1 -->
+            <div class="card">
+                <div style="aspect-ratio: 4/3; overflow: hidden; border-radius: 8px; margin-bottom: 1.5rem; border: 1px solid var(--color-glass-border);">
+                    <img src="assets/images/gallery/cert-aiu-vgu.jpg" alt="AIU-VGU FDP" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <span class="text-gold" style="font-size: 0.85rem;">Nov 2025 • AIU-VGU</span>
+                <h3 style="margin: 0.75rem 0; font-size: 1.3rem;">Sustainability & Well-Being FDP</h3>
+                <p style="font-size: 0.95rem; color: var(--color-text-muted);">Integrating ESG frameworks into management education for academic excellence.</p>
+            </div>
+
+            <!-- Certificate 2 -->
+            <div class="card">
+                <div style="aspect-ratio: 4/3; overflow: hidden; border-radius: 8px; margin-bottom: 1.5rem; border: 1px solid var(--color-glass-border);">
+                    <img src="assets/images/gallery/cert-data-analysis.png" alt="VIT Data Analysis" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <span class="text-gold" style="font-size: 0.85rem;">Oct 2025 • VIT Business School</span>
+                <h3 style="margin: 0.75rem 0; font-size: 1.3rem;">Multidisciplinary Data Analysis</h3>
+                <p style="font-size: 0.95rem; color: var(--color-text-muted);">Advanced techniques in statistical analysis for high-impact research output.</p>
+            </div>
+
+            <!-- Certificate 3 -->
+            <div class="card">
+                <div style="aspect-ratio: 4/3; overflow: hidden; border-radius: 8px; margin-bottom: 1.5rem; border: 1px solid var(--color-glass-border);">
+                    <img src="assets/images/gallery/cert-fdp-national.jpg" alt="JIMS FDP" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <span class="text-gold" style="font-size: 0.85rem;">Jul 2025 • JIMS Greater Noida</span>
+                <h3 style="margin: 0.75rem 0; font-size: 1.3rem;">Analytical Tools for Research</h3>
+                <p style="font-size: 0.95rem; color: var(--color-text-muted);">Focus on modern research methodologies and digital research infrastructure.</p>
+            </div>
+        </div>
+
+        <h3 class="subsection-title" style="margin-top: 5rem;">Core Academic QIPs</h3>
+        <div class="grid">
+            <!-- Key Workshops -->
+            <div class="card">
+                <span class="text-gold" style="font-size: 0.85rem;">AICTE Sponsored QIP • BHU Varanasi</span>
+                <h3 style="margin: 0.75rem 0; font-size: 1.3rem;">Merger & Acquisition</h3>
+                <p style="font-size: 0.95rem; color: var(--color-text-muted);">Intensive program at Faculty of Management Studies, BHU on global business strategies.</p>
+            </div>
+
+            <div class="card">
+                <span class="text-gold" style="font-size: 0.85rem;">AIMA Workshop • Sriram Business School</span>
+                <h3 style="margin: 0.75rem 0; font-size: 1.3rem;">Sales Management</h3>
+                <p style="font-size: 0.95rem; color: var(--color-text-muted);">Advanced sales operations and managerial performance optimization.</p>
+            </div>
+        </div>
+    </main>
     </main>
 
     <footer>
         <p>&copy; 2026 Dr. Mohd. Yaseen Khan. All Rights Reserved.</p>
+        <p style="font-size: 0.8rem; margin-top: 0.5rem; opacity: 0.8;">Developed by <a href="https://visibilitycanvas.in" target="_blank" style="color: var(--color-primary); text-decoration: none;">visibilitycanvas.in</a></p>
     </footer>
 
     <script src="js/animations.js"></script>
