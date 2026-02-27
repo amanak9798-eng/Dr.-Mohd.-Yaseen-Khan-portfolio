@@ -4,9 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="assets/images/profile-picture.png">
+    <meta property="og:type" content="website">
+    <meta name="description" content="Contact Dr. Mohd. Yaseen Khan for academic collaborations, research partnerships, and PhD supervision.">
+    <link rel="canonical" href="https://mykhan.in/contact.html" />
     <title>Contact | Dr. Mohd. Yaseen Khan</title>
+    <link rel="icon" type="image/png" href="assets/images/profile-picture.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap"></noscript>
+
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap"
         rel="stylesheet">
@@ -18,15 +27,17 @@
     <script type="text/javascript">
         (function () {
             // NOTE: Replace 'YOUR_PUBLIC_KEY' with your actual EmailJS public key
+            // Example: emailjs.init('user_123456789');
             emailjs.init('YOUR_PUBLIC_KEY');
         })();
     </script>
 </head>
 
 <body>
+    <div class="scroll-progress"></div>
     <nav class="navbar">
-        <div class="logo"><a href="index.html">Dr. Yaseen Khan</a></div>
-        <div class="hamburger">
+        <div class="logo"><a href="index.html">Dr. Mohd. Yaseen Khan</a></div>
+        <div class="hamburger" aria-label="Toggle navigation menu">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
@@ -39,7 +50,7 @@
             <a href="research.html">Research</a>
             <a href="achievements.html">Achievements</a>
             <a href="contact.html" class="active">Contact</a>
-            <a href="assets/Dr_Khan_CV.pdf" target="_blank" class="btn-cv"></a>
+            <a href="assets/docs/Dr_MY_Khan_Resume.pdf" target="_blank" class="btn-cv" aria-label="Download CV">CV</a>
         </div>
     </nav>
 
@@ -55,10 +66,9 @@
                             Khan</strong></p>
                     <p class="mb-1"><i class="fas fa-phone-alt text-gold" style="width: 20px;"></i> +91 99999 00423, +91
                         99273 30833</p>
-                    <p class="mb-1"><i class="fas fa-envelope text-gold" style="width: 20px;"></i> drmykhan76@gmail.com
+                    <p class="mb-1"><i class="fas fa-envelope text-gold" style="width: 20px;"></i> drmykhan76@gmail.com, my_candida@rediffmail.com
                     </p>
-                    <p class="mb-1"><i class="fas fa-map-marker-alt text-gold" style="width: 20px;"></i> Bareilly, U.P.
-                        / Jaipur, Rajasthan</p>
+                    <p class="mb-1"><i class="fas fa-map-marker-alt text-gold" style="width: 20px;"></i> Imran Building Material, Hartmann Road, Rahpura Choudhry, Izzat Nagar, Bareilly U.P.-243122, India.</p>
                 </div>
 
                 <div class="availability-box">
@@ -76,10 +86,10 @@
                 <h4 class="text-gold mb-1">Connect Online</h4>
                 <div class="social-links">
                     <a href="https://www.linkedin.com/in/dr-mohd-yaseen-khan-3a057920" target="_blank"
-                        title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        title="LinkedIn" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                     <a href="https://www.researchgate.net/scientific-contributions/Mohd-Yaseen-Khan-2294078818"
-                        target="_blank" title="ResearchGate"><i class="fab fa-researchgate"></i></a>
-                    <a href="mailto:drmykhan76@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                        target="_blank" title="ResearchGate" aria-label="ResearchGate"><i class="fab fa-researchgate"></i></a>
+                    <a href="mailto:drmykhan76@gmail.com" title="Email" aria-label="Email"><i class="fas fa-envelope"></i></a>
                 </div>
             </div>
 
@@ -168,6 +178,7 @@
             btn.style.opacity = '0.7';
 
             // NOTE: Replace these with your actual Service ID and Template ID from EmailJS
+            // Example: emailjs.sendForm('service_xyz', 'template_abc', this)
             emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
                 .then(function () {
                     btn.textContent = 'Message Sent!';
@@ -203,6 +214,7 @@
 
     <footer>
         <p>&copy; 2026 Dr. Mohd. Yaseen Khan. All Rights Reserved.</p>
+        <p style="font-size: 0.8rem; margin-top: 0.5rem; opacity: 0.8;">Developed by <a href="https://visibilitycanvas.in" target="_blank" style="color: var(--color-primary); text-decoration: none;">visibilitycanvas.in</a></p>
     </footer>
 
     <script src="js/animations.js"></script>

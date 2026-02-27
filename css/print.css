@@ -1,0 +1,71 @@
+@media print {
+    /* Hide non-essential elements for print */
+    .navbar,
+    .hamburger,
+    .hero-image-container,
+    .btn,
+    .social-links,
+    footer,
+    .icon-badge {
+        display: none !important;
+    }
+
+    /* Reset background and colors for print */
+    body {
+        background: #fff !important;
+        color: #000 !important;
+        font-size: 12pt;
+    }
+
+    /* Expand containers */
+    .container,
+    .hero,
+    .section {
+        width: 100% !important;
+        max-width: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    /* Typography adjustments */
+    h1, h2, h3, h4 {
+        color: #000 !important;
+        page-break-after: avoid;
+    }
+
+    p {
+        color: #000 !important;
+        line-height: 1.5;
+    }
+
+    /* Link display */
+    a {
+        text-decoration: underline;
+        color: #000 !important;
+    }
+
+    a[href^="http"]::after {
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+    }
+
+    /* Card styling removal for print */
+    .card {
+        background: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+        margin-bottom: 2rem !important;
+        page-break-inside: avoid;
+    }
+
+    /* Timeline adjustments */
+    .timeline::before {
+        border-left: 2px solid #ccc;
+    }
+
+    .timeline-marker {
+        border-color: #000 !important;
+        background: #fff !important;
+    }
+}

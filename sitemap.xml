@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Main Pages -->
+  <url>
+    <loc>https://mykhan.in/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://mykhan.in/about.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mykhan.in/education.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mykhan.in/experience.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mykhan.in/research.html</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://mykhan.in/achievements.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mykhan.in/contact.html</loc>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Documents -->
+  <url>
+    <loc>https://mykhan.in/assets/docs/Dr_MY_Khan_Resume.pdf</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mykhan.in/assets/docs/Rashtrapati_Purushkar.pdf</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mykhan.in/assets/docs/chemical-free-fertilizer.pdf</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://mykhan.in/assets/docs/social-media-and-genz.pdf</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://mykhan.in/assets/docs/the-alchemic-spark.pdf</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://mykhan.in/assets/docs/global-training-certificate.pdf</loc>
+    <priority>0.5</priority>
+  </url>
+</urlset>
