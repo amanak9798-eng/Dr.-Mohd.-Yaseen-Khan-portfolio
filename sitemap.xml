@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Main Pages -->
   <url>
     <loc>https://mykhan.in/</loc>
     <priority>1.0</priority>
@@ -8,6 +7,10 @@
   <url>
     <loc>https://mykhan.in/about.html</loc>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mykhan.in/awards.html</loc>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mykhan.in/education.html</loc>
@@ -18,26 +21,45 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mykhan.in/research.html</loc>
-    <priority>0.9</priority>
-  </url>
-  <url>
     <loc>https://mykhan.in/achievements.html</loc>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mykhan.in/research.html</loc>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mykhan.in/contact.html</loc>
     <priority>0.6</priority>
   </url>
 
-  <!-- Documents -->
   <url>
     <loc>https://mykhan.in/assets/docs/Dr_MY_Khan_Resume.pdf</loc>
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://mykhan.in/assets/docs/Dr_Khan_CV.pdf</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://mykhan.in/assets/docs/Rashtrapati_Purushkar.pdf</loc>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mykhan.in/assets/docs/From%20Family%20Based%20Care%20to%20Formal%20Elder%20Care%20Systems.pdf</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://mykhan.in/assets/docs/Study%20on%20Financial%20Literacy%20.pdf</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://mykhan.in/assets/docs/Financial%20Ecosystems%20in%20Transition.pdf</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://mykhan.in/assets/docs/Seeds%20of%20sovereignty.pdf</loc>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mykhan.in/assets/docs/chemical-free-fertilizer.pdf</loc>
